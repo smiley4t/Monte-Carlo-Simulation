@@ -9,6 +9,7 @@ This project runs Monte Carlo Simulation of Binomial Distribution, Poisson Distr
 ```N<-1000```
 
 ```z<-1.644854```
+
 ##Create a distribution of t-statistic of 1000 samples of 20 observation from Binomial distribution Bin(10,0.1) 
 
 ```n<-20
