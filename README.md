@@ -12,16 +12,22 @@ This project runs Monte Carlo Simulation of Binomial Distribution, Poisson Distr
 
 Create a distribution of t-statistic of 1000 samples of 20 observation from Binomial distribution Bin(10,0.1)
 
-```n<-20
-tstat_MC<-replicate(n=1000,expr={x=rbinom(20,10,0.1);c((mean(x)-1)/(sqrt(var(x))/sqrt(n)))})
-count(tstat_MC<=z)```
+```n<-20```
 
-##965 => p=0.965
+```tstat_MC<-replicate(n=1000,expr={x=rbinom(20,10,0.1);c((mean(x)-1)/(sqrt(var(x))/sqrt(n)))})```
 
-##Create a distribution of t-statistic of 1000 samples of 20 observation from Poisson distribution Poi(1)
+And calculate the number of t-statistics lessthan z-statistic = 1.644854
 
-```n<-20
-tstat_MC<-replicate(n=1000,expr={x=rpois(20,1);c((mean(x)-1))/(sqrt(var(x))/sqrt(n))})
-count(Tn_MC<=z)```
+```count(tstat_MC<=z)```
 
-##960 (c0nstant) => p=0.96
+Results: 965 => p=0.965
+
+Create a distribution of t-statistic of 1000 samples of 20 observation from Poisson distribution Poi(1)
+
+```n<-20```
+
+```tstat_MC<-replicate(n=1000,expr={x=rpois(20,1);c((mean(x)-1))/(sqrt(var(x))/sqrt(n))})```
+
+```count(Tn_MC<=z)```
+
+Results: 960 (c0nstant) => p=0.96
