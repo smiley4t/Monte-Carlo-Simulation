@@ -17,3 +17,11 @@ tstat_MC<-replicate(n=1000,expr={x=rbinom(20,10,0.1);c((mean(x)-1)/(sqrt(var(x))
 count(tstat_MC<=z)```
 
 ##965 => p=0.965
+
+##Create a distribution of t-statistic of 1000 samples of 20 observation from Poisson distribution Poi(1)
+
+```n<-20
+tstat_MC<-replicate(n=1000,expr={x=rpois(20,1);c((mean(x)-1))/(sqrt(var(x))/sqrt(n))})
+count(Tn_MC<=z)```
+
+##960 (c0nstant) => p=0.96
