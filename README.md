@@ -15,4 +15,5 @@ This project runs Monte Carlo Simulation of Binomial Distribution, Poisson Distr
 ```n<-20
 tstat_MC<-replicate(n=1000,expr={x=rbinom(20,10,0.1);c((mean(x)-1)/(sqrt(var(x))/sqrt(n)))})
 count(tstat_MC<=z)```
+
 ##965 => p=0.965
