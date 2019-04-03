@@ -66,16 +66,16 @@ Create a distribution of randomized version of t-statistic of 1000 samples of 20
   a[i]<- abs(w[i]-1)*(X[i]-1)
   b[i]<-(w[i]-1)^2};
  c(sum(a)/(sqrt(var(X))*sqrt(sum(b))))})```
- 
-```count(tstat_random_MC<=z)```
+
+count(tstat_random_MC<=z)
 
 Result: 955 => p=0.955
 
 Create a distribution of randomized version of t-statistic of 1000 samples of 20 observation from Poisson distribution Poi(1)
 
-```n<-20```
+n<-20
 
-```vec.prob<-c(rep(1/n,n))```
+vec.prob<-c(rep(1/n,n))
 
 ```a=rep(0,n)```
 
