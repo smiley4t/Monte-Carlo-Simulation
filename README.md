@@ -72,6 +72,25 @@ c(sum(a)/(sqrt(var(X))*sqrt(sum(b))))})
 Result: 966 => p =0.966
 
 
+Create a distribution of randomized version of t-statistic of 1000 samples of 20 observation from Exponential distribution Exp(1)
+
+``n<-20```
+
+```vec.prob<-c(rep(1/n,n))```
+
+```a=rep(0,n)```
+
+```b=rep(0,n)```
+
+tstat_random_MC<-replicate(n=1000,expr={w=rmultinom(1,n,vec.prob);X=rexp(20,1);for ( i in 1:n){
+  a[i]<- abs(w[i]-1)*(X[i]-1)
+  b[i]<-(w[i]-1)^2};
+c(sum(a)/(sqrt(var(X))*sqrt(sum(b))))})
+
+count(tstat_random_MC<=z)#965 => p = 0.965
+
+
+
 
 
 
