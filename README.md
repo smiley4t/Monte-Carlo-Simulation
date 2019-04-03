@@ -69,7 +69,7 @@ Create a distribution of randomized version of t-statistic of 1000 samples of 20
  
 ```count(tstat_random_MC<=z)```
 
-Result: 955 => p=0.955
+/ Result: 955 => p=0.955
 
 Create a distribution of randomized version of t-statistic of 1000 samples of 20 observation from Poisson distribution Poi(1)
 
