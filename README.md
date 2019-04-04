@@ -7,6 +7,12 @@ Theology:
  
  Let X1,X2,…,X¬n be independent , identically distributed random variables with a common distribution function F(.), E(X) =µ, and Var(X) = E(X - µ)2 . Denote:
 
+X¬¬¬n =\frac{1}{n}\sum_{i=1}^{n}X_i\  and S_n^2 = \frac{1}{n}i=1n(Xi - X¬n)2
+to be the sample mean and the sample variance respectively, and consider the classical Student t-statistic
+Tn(X - µ) = X¬¬¬n - µSnn.
+According to the Central Limit Theorem, as n -> \infty:
+Tn(X - µ) -> N( 0,1) in distribution
+
 
 
 
