@@ -2,20 +2,6 @@
 Run Monte Carlo Simulation 
 This project runs Monte Carlo Simulation of Binomial Distribution, Poisson Distribution , Exponential Distribution. Then it would calculate the number of t-statistic and its randomized versions of t-statistic less than 95% percentile z-statistic of a standard normal distribution to see whether that number is around 0.95 or not. If it is approximately 0.95 that means the central limit theorem is supported by the simulation. 
 
-Theology:
-# T- statistic:
- 
- Let X1,X2,…,X¬n be independent , identically distributed random variables with a common distribution function F(.), E(X) =µ, and Var(X) = E(X - µ)2 . Denote:
-
-X¬¬¬n =\frac{1}{n}\sum_{i=1}^{n}X_i\  and S_n^2 = \frac{1}{n}i=1n(Xi - X¬n)2
-to be the sample mean and the sample variance respectively, and consider the classical Student t-statistic
-Tn(X - µ) = X¬¬¬n - µSnn.
-According to the Central Limit Theorem, as n -> \infty:
-Tn(X - µ) -> N( 0,1) in distribution
-
-
-
-
  ```set.seed (123)```
  
 ```library("plyr")```
